@@ -1,7 +1,8 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-//Unity CG Sprite Circle Shader v1.0 - Mitch Zais
-Shader "MZ/Sprites/Sprite_CircleCutout" 
+// Unity CG Sprite Circle Shader v1.0 - Mitch Zais
+// Link: https://forum.unity.com/threads/i-need-a-circular-sprite.245021/
+Shader "Ecilos/Masks/Sprites/SpriteCircleMask"
 {
 	Properties 
 	{
