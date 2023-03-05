@@ -4,7 +4,7 @@
 // Link: https://forum.unity.com/threads/i-need-a-circular-sprite.245021/
 Shader "Ecilos/Masks/Sprites/SpriteCircleMask"
 {
-	Properties 
+	Properties
 	{
 	   [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 	   _Color("Tint / Transparency", Color) = (1,1,1,1)
@@ -15,13 +15,13 @@ Shader "Ecilos/Masks/Sprites/SpriteCircleMask"
 	   _BlurWidth("Edge Blur Width", Float) = 1
 	   [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 	}
-	SubShader 
+	SubShader
 	{
 		Tags
-		{ 
-			"Queue"="Transparent" 
-			"IgnoreProjector"="True" 
-			"RenderType"="Transparent" 
+		{
+			"Queue"="Transparent"
+			"IgnoreProjector"="True"
+			"RenderType"="Transparent"
 			"PreviewType"="Plane"
 			"CanUseSpriteAtlas"="True"
 		}
@@ -30,7 +30,7 @@ Shader "Ecilos/Masks/Sprites/SpriteCircleMask"
 			ZWrite Off
 			Fog { Mode Off }
 			Blend SrcAlpha OneMinusSrcAlpha
-	    Pass 
+	    Pass
 	    {
 		CGPROGRAM
 
@@ -84,6 +84,6 @@ Shader "Ecilos/Masks/Sprites/SpriteCircleMask"
 			}
 		ENDCG
 	    }
-	} 
+	}
 Fallback "Transparent/VertexLit"
 }
